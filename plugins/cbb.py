@@ -112,7 +112,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔥 owner 🔥", url=f"{@RJMALLU}"
+                        "🔥 owner 🔥", "https://telegram.me/{RJMALLU}""
                     )
                 ],
             ]
@@ -132,7 +132,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔥 owner 🔥", url=f"{@RJMALLU}"
+                        "🔥 owner 🔥", "https://telegram.me/{RJMALLU}"""
                     )
                 ],
             ]
@@ -149,7 +149,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔥 owner 🔥", url=f"{@RJMALLU}"
+                        "🔥 owner 🔥", ""https://telegram.me/{RJMALLU}""
                     )
                 ],
             ]
