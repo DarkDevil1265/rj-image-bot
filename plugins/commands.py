@@ -2,7 +2,6 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram import Client, filters
 from script import script  # pylint:disable=import-error
-from sample_config import LINK
 
 @Client.on_message(filters.command(["start"]) & filters.private)
 async def start(client: Client, message: Message):
@@ -15,13 +14,7 @@ async def start(client: Client, message: Message):
                     [
                         InlineKeyboardButton("HELP", callback_data="help_data"),
                         InlineKeyboardButton("ABOUT", callback_data="about_data"),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "🖥️ HOW TO OWN 🖥️",
-                            url=f"{LINK}",
-                        )
-                    ],
+                    ]
                 ]
             ),
             reply_to_message_id=message.message_id,
@@ -41,13 +34,7 @@ async def help(client, message):
                     [
                         InlineKeyboardButton("BACK", callback_data="start_data"),
                         InlineKeyboardButton("ABOUT", callback_data="about_data"),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "🖥️ HOW TO OWN 🖥️",
-                            url=f"{LINK}",
-                        )
-                    ],
+                    ]
                 ]
             ),
             reply_to_message_id=message.message_id,
@@ -67,13 +54,7 @@ async def about(client, message):
                     [
                         InlineKeyboardButton("BACK", callback_data="help_data"),
                         InlineKeyboardButton("START", callback_data="start_data"),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "🖥️ HOW TO OWN 🖥️",
-                            url=f"{LINK}",
-                        )
-                    ],
+                    ]
                 ]
             ),
             reply_to_message_id=message.message_id,
